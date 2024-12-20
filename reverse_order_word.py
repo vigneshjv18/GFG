@@ -13,6 +13,21 @@ class Solution:
         return reverse
             
         # code here 
+solution = Solution()
+
+# Test cases
+test_cases = [
+    "  Hello   world   Python  ",  # Normal case with extra spaces
+    "Hello world",                # No extra spaces
+    "     ",                      # Only spaces
+    "",                           # Empty string
+    "OneWord",                    # Single word
+    "Word1  Word2 Word3  ",       # Mixed spacing
+]
+
+for i , test_case in enumerate(test_cases):
+    result = solution.reverseWords(test_case)
+    print(f"Test Case {i}: Input: '{test_case}' | Output: '{result}'")
 
 
 #{ 
